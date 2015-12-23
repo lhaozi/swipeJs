@@ -8,3 +8,4 @@ $("#test").swipes({
 	preventDefaultEvents: true //阻止默认事件
 });
 demo见demo。
+demo1.html,处理方式是通过margin-top实现位置的滑动。兼容向左向右滑动

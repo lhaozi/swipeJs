@@ -1,0 +1,626 @@
+<!DOCTYPE HTML>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="appl""apple-mobile-web-app-status-bar-style" content="black">
+<meta content="telephone=no" name="format-detection" />
+
+<title>测试滑动效果</title>
+
+<link href="../assets/css/style.css" rel="stylesheet" type="text/css" />
+<script src="../assets/js/zepto.js"></script>
+<script src="../assets/js/swipe.js"></script>
+<script src="../assets/js/slider.js"></script>
+<script src="../assets/js/slider_horz.js"></script>
+<script src="../assets/js/index.js"></script>
+<style>
+.day_list{ opacity:1; position:absolute; width:320px; left:50%; margin-left:-160px; height:100%; overflow:hidden; z-index:100;}
+.day_list li.active{opacity:0;}
+.marCon1{overflow:hidden;}
+/***gao****/
+
+.no_topcon {width:100%;overflow:hidden; float:left;}
+.no_topcon li {width:320px;float:left;}
+.no_data {width:132px;margin:40px auto 0px auto; }
+.no_data img {width:100%;}
+.no_richeng {width:280px;margin:0 auto;color:#262626; text-align:center;font-size:12px;line-height:20px;padding-bottom:5px;}
+.no_richeng h6 {font-size:15px;width:100%;text-align:center;font-weight:normal;padding:10px 0;}
+</style>
+<script>
+	var glb={
+		isMove:true
+	}
+</script>
+</head>
+
+<body>
+	<div class="scroll_panel">
+		<div class="marCon">
+			<div class="page">
+				<div class="page_breif">
+					<span class="nums" id="cur_page">1</span>
+					<span class="total">of<cite id="totalPage">10</cite></span>
+				</div>
+			</div>
+			<article>
+				<section id="lay-first" class="all-screen" >
+					<div class="day_list slider" data-ani="day_list" >
+						<div class="marCon1">
+							<ul class="no_topcon">
+								<li>
+									<div class="no_data">
+										<img src="../assets/images/date_01.png">
+									</div>
+									<div class="no_richeng"  data-ani="no_richeng">
+										<h6>日程</h6>
+										<p>集结报到／环城巡游</p>
+									</div>
+								</li>
+								
+								<li>
+									<div class="no_data">
+										<img src="../assets/images/date_02.png">
+									</div>
+									<div class="no_richeng">
+										<h6>日程</h6>
+										<p>集结报到／环城巡游</p>
+									</div>
+								</li>
+								
+								<li>
+									<div class="no_data">
+										<img src="../assets/images/date_03.png">
+									</div>
+									<div class="no_richeng">
+										<h6>日程</h6>
+										<p>阿拉善英雄会开幕式<br>
+										腾格里沙漠挑战赛-预赛<br>
+										第九届T3沙漠挑战赛-预赛<br>
+										FB-Max乌兰牧骑歌舞晚会</p>
+									</div>
+								</li>
+								
+								<li>
+									<div class="no_data">
+										<img src="../assets/images/date_04.png">
+									</div>
+									<div class="no_richeng">
+										<h6>日程</h6>
+										<p>阿拉善沙漠发展论坛<br>
+	岩石挑战赛（牧马人大会）<br> 
+	武林大会 (场地／0-4／攀岩）<br>
+	沙漠集体婚礼<br>
+	FB-GAME沙漠运动会
+	FB-Max会员晚会</p>
+									</div>
+								</li>
+								
+								<li>
+									<div class="no_data">
+										<img src="../assets/images/date_05.png">
+									</div>
+									<div class="no_richeng">
+										<h6>日程</h6>
+										<p>腾格里沙漠挑战赛决赛 <br>
+	武林大会 (场地／0-4／攀岩）<br>
+	FB-GAME沙漠运动会<br>
+	FB-Max 慈善晚会 </p>
+									</div>
+								</li>
+								
+								<li>
+									<div class="no_data">
+										<img src="../assets/images/date_06.png">
+									</div>
+									<div class="no_richeng">
+										<h6>日程</h6>
+										<p>T3沙漠挑战赛决赛 <br>
+	FB-Max颁奖／电音晚会</p>
+									</div>
+								</li>
+								
+								<li>
+									<div class="no_data">
+										<img src="../assets/images/date_07.png">
+									</div>
+									<div class="no_richeng">
+										<h6>日程</h6>
+										<p>阿拉善秘境穿越之旅
+										</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>	
+				<section id="lay-second" class="all-screen">
+					<figure>
+						今年他车去送修，借我suv回家
+					</figure>
+
+				</section>
+				
+				
+				<section id="lay-third" class="all-screen">
+					<figure>
+						途径断桥，停车致电，<br>
+告知：挂至四驱，直行而过
+
+					</figure>
+				</section>
+				
+				
+				<section id="lay-fourth" class="all-screen">
+					<figure>
+						石不再搬，手是干的。<br><br>
+
+<span class="ft12">车轮卷起一人高的水花，<br>
+在众人的围观中<br><br></span>
+
+哥们一身豪气的飒爽而过。
+
+					</figure>
+				</section>
+				
+				<section id="lay-fifth" class="all-screen">
+					
+<figure>
+		春节回来，<br>
+
+他换了一辆四驱车。
+
+					</figure>
+				</section>
+				
+				
+				<section id="lay-sixth" class="all-screen">
+					<figure>
+		<span class="ft20">乔布斯</span>　说 …
+
+					</figure>
+				</section>
+				
+				<section id="lay-seven" class="all-screen">
+					<figure>
+		<span class="ft20">People don't know what I really want at all, </span><br>
+
+用户永远不知道自己想要什么
+
+					</figure>
+				</section>
+				
+				<section id="lay-eight" class="all-screen">
+					<figure>
+		<span class="ft20">until your products are in their eyes.</span><br>
+
+直到你把产品放到他们眼前
+
+
+					</figure>
+				</section>
+				<section  class="all-screen">
+					<figure>我们戏称为<br><br>
+		<span class="ft30">下毒</span>
+
+					</figure>
+				</section>
+				
+				<section  class="all-screen">
+					<figure>也许你说：no！no！no！我的客户都
+<br>
+		<span class="ft20">大约知道自己想要什么。</span>
+
+					</figure>
+				</section>
+				
+				<section  class="all-screen">
+					<figure>那是因为，找到你的，是<br>
+		<span class="ft30">需求用户</span>
+
+					</figure>
+				</section>
+				
+				<section  class="all-screen">
+					<figure>2015年中国有300万汽车购酷需求用户
+
+					</figure>
+				</section>
+				
+				<section  class="all-screen">
+					<figure>
+		<span class="ft20">店面位置、口碑传播力、广告载体的覆盖面</span><br>
+		决定了你能从300万用户中抢夺多少销售额
+
+
+					</figure>
+				</section>
+				
+				<section  class="all-screen">
+					<figure>
+		<span class="ft20">为了抢夺300w需求用户，你2015的营销计划：</span><br>
+		<p style="text-align:left;">1.精选店面，装修门口，增加实体店客流<br>
+2.开微商，开淘宝，开媒体号，刷朋友圈，刷直通车<br>
+3.投平媒，投网媒，投大广告牌<br>
+4.参展，搭台，风光展会一席。<br>
+5.做活动，拍影片，录访谈。</P>
+
+
+					</figure>
+				</section>
+				
+				<section  class="all-screen">
+					<figure>
+		<span class="ft20">敞开你的钱包</span>，继续投入到<br>
+平媒、网媒、门店、购粉、刷钻、赞助、买软文、做视频、组俱乐部
+<span class="ft20">这些老一套？</span>
+					</figure>
+				</section>
+				
+				<section  class="all-screen">
+					<figure>
+		<span class="ft20">继续在严重同质化的市场竞争中奋勇厮杀？</span>
+
+					</figure>
+				</section>
+				
+				<section  class="all-screen">
+					<figure>但你总不能奢望一家独揽把？<br>
+1%的市场份额？<br>
+别太耀眼，已经不少了。<br>
+		<span class="ft20">300w x 1% ＝ 3w 人</span><br>已经能吃的很饱了。。。
+
+
+					</figure>
+				</section>
+				
+				<section  class="all-screen">
+					<figure>
+		<span class="ft20">但 …
+</span>
+
+					</figure>
+				</section>
+				
+				<section  class="all-screen">
+					<figure>
+		<span class="ft20">这就满足了？
+</span>
+
+					</figure>
+				</section>
+				
+				<section  class="all-screen">
+					<figure>
+		<span class="ft20">想不想，更好？
+</span>
+
+					</figure>
+				</section>
+				
+				<section  class="all-screen">
+					<figure>
+		<span class="ft20">OK
+</span>
+
+					</figure>
+				</section>
+				
+				<section  class="all-screen">
+					<figure>
+		<span class="ft20">如果跟我们一起</span>
+
+					</figure>
+				</section>
+				
+				<section  class="all-screen">
+					<figure>
+		<span class="ft20">给我哥们那样的，知晓，却不过心的人
+</span>
+
+					</figure>
+				</section>
+				
+				<section  class="all-screen">
+					<figure>
+		<span class="ft30">下毒</span>
+
+					</figure>
+				</section>
+				
+				<section  class="all-screen">
+					<figure>
+		<span class="ft20">不是推销，是下毒</span><br><br>
+		区别是<br><br>
+
+1.用户是自愿被吸引而来<br>
+2.愉悦鉴赏式的应用场景。<br>
+3.传授指导式的立场表达<br>
+4.代入体验式的引导模式
+
+					</figure>
+				</section>
+				
+				<section  class="all-screen">
+					<figure>你让他中的毒不是产品和服务，而是
+<br>
+		<span class="ft30">极富魅力的<br>
+感召力和影响力</span>
+
+					</figure>
+				</section>
+				
+				<section  class="all-screen">
+					<figure>他们会被以前知道，<br>
+却从来没有机会真正了解过的便利、炫酷和优势
+
+<br>
+		<span class="ft30">震撼</span>
+
+					</figure>
+				</section>
+				<section  class="all-screen">
+					<figure>并有10%的可能性愿意在行动上，尝试着
+<br>
+		<span class="ft30">追随你</span>
+
+					</figure>
+				</section>
+				
+				<section  class="all-screen">
+					<figure>
+		<span class="ft30">然后……</span>
+
+					</figure>
+				</section>
+				
+				<section  class="all-screen">
+					<figure>
+
+		<span class="ft20">我哥们这种型在中国有</span><br>
+		<span class="ft30">300000000</span>人<br>
+		3亿用户等待被下毒中……
+
+
+					</figure>
+				</section>
+				
+				<section  class="all-screen">
+					<figure>这就是我们所说的
+<br>
+		<span class="ft30">潜在用户</span>
+
+					</figure>
+				</section>
+				
+				<section  class="all-screen">
+					<figure>3亿 x 10％ ＝ 3000w 人
+
+					</figure>
+				</section>
+				
+				<section  class="all-screen">
+					<figure>这就是我们所说的
+<br>
+		<span class="ft30">忠实用户</span>
+
+					</figure>
+				</section>
+				
+				<section  class="all-screen">
+					<figure>
+		<span class="ft20">挖掘潜在用户<br>
+转换成需求用户<br>
+并最终形成忠实用户</span>
+
+					</figure>
+				</section>
+				
+				<section  class="all-screen">
+					<figure>
+		<span class="ft20">这才是将销售数字<br>
+提升整个量级的
+</span><br><br>
+<span class="ft30">大营销
+</span>
+
+					</figure>
+				</section>
+				
+				<section  class="all-screen">
+					<figure>
+		<span class="ft20">然而</span>
+
+					</figure>
+				</section>
+				
+				<section  class="all-screen">
+					<figure>如何让潜在用户在没有抵触的意识中，<br>
+让他 <span class="ft20">倾听</span> 并 <span class="ft30">认同</span> 你的  <span class="ft20">真挚</span> 和  <span class="ft20">诚恳</span><br>
+愿意 <span class="ft30">相信你</span> 和 <span class="ft30">追随你</span>
+</span>
+
+					</figure>
+				</section>
+				<section  class="all-screen">
+					<figure>
+		<span class="ft20">这就是……
+</span>
+
+					</figure>
+				</section>
+				<section  class="all-screen">
+					<figure>
+		<span class="ft20">酷车志</span><br>要帮你做的
+
+					</figure>
+				</section>
+				<section  class="all-screen">
+					<figure>当然，你也许更希望一个平静而安详的2015<br>
+
+别太贪心，300w真的足够吃了
+<br>
+		<span class="ft20">然而 ……</span>
+
+					</figure>
+				</section>
+				<section  class="all-screen">
+					<figure>
+		<span class="ft20">你真心认为我们这个产业，<br>
+走2014年那一套，还能稳稳当当？
+</span>
+
+					</figure>
+				</section>
+				<section  class="all-screen">
+					<figure>看那送餐，美甲，家政，家装都已o2o的搅局传统。<br>
+看那面膜，零食，母婴，鞋帽都已微商毒销量破亿。<br>
+看那京城4S店哀哄遍野<br>
+看那爱卡车家低谷乍现<br>
+看那洗车服务1元开工<br>
+看那修车师傅已脱离老板和店面上门保养
+
+
+					</figure>
+				</section>
+				<section  class="all-screen">
+					<figure>
+		<span class="ft20">车后市场的革新已暗潮涌动</span><br>你看到了吗？
+
+
+					</figure>
+				</section>
+				<section  class="all-screen">
+					<figure style="text-align:left;">
+		<span class="ft20" style="text-align:left;">1)去中介化,直连技能者和需求者,减少管理和实体成本;<br>
+2)去信息不对称,价格横比、利润通透;<br>
+3)宣广平台化，个体传播声音越来越小<br>
+4)在信息链、价值链、资金链三个维度重新构建商业生态。
+</span>
+
+					</figure>
+				</section>
+				<section  class="all-screen">
+					<figure>
+		<span class="ft30">你跟上了吗？</span>
+
+					</figure>
+				</section>
+				<section  class="all-screen">
+					<figure>跟随我们，不仅仅是在销售<br><br>
+
+更是在促进<br><br>
+		<span class="ft20">汽车后服务产业的升级与进步
+</span>
+
+					</figure>
+				</section>
+				<section  class="all-screen">
+					<figure>跟随我们，不仅仅是在销售<br><br>
+
+更是在推动<br><br>
+		<span class="ft20">奢品、改装、汽车文化的进阶与发展
+</span>
+
+					</figure>
+				</section><section  class="all-screen">
+					<figure>跟随我们，不是仅仅是在销售<br>
+		<span class="ft20">这是在<br>做产业的 革新者 和 引领者 。</span>
+
+					</figure>
+				</section>
+				<section  class="all-screen">
+					<figure>
+		<span class="ft20">跟随我们，这不仅仅是在做销售</span>
+
+					</figure>
+				</section>
+				<section  class="all-screen">
+					<figure>
+		<span class="ft20">这就是……
+</span>
+
+					</figure>
+				</section>
+				<section  class="all-screen">
+					<figure>
+		<span class="ft20">酷车志</span><br>要帮你做的
+
+					</figure>
+				</section>
+
+					</figure>
+				</section>
+				<section  class="all-screen">
+					<figure>
+		<span class="ft30">是奠定未来
+</span>
+
+					</figure>
+				</section>
+				<section  class="all-screen">
+					<figure>
+		<span class="ft20">引导消费者，扩大见阅面，<br>
+转换潜在意识激活消费需求。</span>
+
+					</figure>
+				</section>
+				<section  class="all-screen">
+					<figure>
+		<span class="ft20">培育市场，扩大需求用户基量<br>
+传播文化，激活潜在用户转换
+</span>
+
+					</figure>
+				</section>
+				<section  class="all-screen">
+					<figure>
+		<span class="ft20">利商户，扩大个体商户传播力和影响力<br>
+培育精准垂直商户，引领细分往专业纵深发展。<br>
+引流导入对口商户，培育千家垂直细分的龙头商铺</span>
+
+					</figure>
+				</section>
+				<section  class="all-screen">
+					<figure>
+		<span class="ft20">颠覆营销格局，加速产业进化，<br>
+倒逼政策升级，重塑产业文化。</span>
+
+					</figure>
+				</section>
+				<section  class="all-screen">
+					<figure>
+		<span class="ft20">这就是……
+</span>
+
+					</figure>
+				</section>
+				<section  class="all-screen">
+					<figure>
+		<span class="ft20">酷车志</span><br>要帮你做的
+
+					</figure>
+				</section>
+				<section  class="all-screen">
+					<figure>
+		<span class="ft20">它是免费的</span>
+
+					</figure>
+				</section>
+				<section  class="all-screen">
+					<figure>
+		<span class="ft20">正等你来<br>
+
+<a href="tel:18663909030">18663909030</a>
+</span>
+
+					</figure>
+				</section>
+				
+			</article>
+			
+		</div>
+	</div>
+	
+</body>
+
+</html>
