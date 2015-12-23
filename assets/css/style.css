@@ -1,0 +1,37 @@
+/* CSS Document */
+*{ margin:0; padding:0; }
+html{ height:100%; }
+body{ font:16px 'Microsoft YaHei',Helvetica; height:100%; min-height:100%; color:#000; word-break:break-word; }
+ul,li{ list-style:none; }
+.left{ float:left; }
+.right{ float:right; }
+.clearfix{ clear:both;}
+a,a:hover{ text-decoration:none; color:#000;}
+div.outCont{ height:100%; background:#ededed; position:relative; overflow:hidden; }
+header,aside,footer,section,article,figure,nav,menu{ display:block; }
+input,button,textarea{-webkit-appearance: none; padding:0;margin:0; border:none; background:none; border-radius:0;-webkit-border-radius:0;-moz-border-radius:0;}
+/*************每个块*************/
+
+/********第一屏*********/
+.scroll_panel{ height:100%;}
+.scroll_panel .marCon{height:100%; overflow:hidden; position:relative;}
+.all-screen{width:100%;height:100%;overflow:hidden; background:#fff;position:relative;}
+
+
+
+.page{ position:absolute; top:20px; z-index:1000; width:100%; left:0;  }
+
+.page_breif{ width:48px; height:14px; margin:0px auto; display:block;  background-image:url(../images/page_bg.png);background-repeat: no-repeat; background-position:right top; background-size:35px 14px;  font-style:normal; }
+.page_breif span.nums{ width:14px; height:14px; display:block; float:left; background:#f8f8f8; border-radius:7px; -webkit-border-radius:7px;-webkit-text-size-adjust:none; font-size:8px; color:#666; line-height:14px; transform-style:preserve-3d;-webkit-transform-style:preserve-3d;  transform:rotateY(0deg) translateZ(0px);-webkit-transform:rotateY(0deg);transition:all 0.25s linear ;-webkit-transition:all 0.25s linear;text-align:center; }
+.page_breif span.nums.ani{transform-style:preserve-3d;-webkit-transform-style:preserve-3d;  transform:rotateY(-90deg) translateZ(0px);-webkit-transform:rotateY(-90deg);}
+.page_breif span.nums.ani.anistop{transform:translateZ(0px); transform:rotatey(0deg);}
+.page_breif span.total{ float:left;-webkit-text-size-adjust:none;font-size:8px; color:#fff; line-height:14px;margin-left:8px;}
+.page_breif span.total cite{margin-left:5px; font-style:normal;}
+
+.all-screen{display:table;}
+.all-screen figure{padding:0px 10px; display:table-cell; text-align:center; vertical-align:middle; height:100%;}
+
+.ft20{ font-size:30px;}
+.ft12{ font-size:16px;}
+.ft30{ font-size:60px;}
+
