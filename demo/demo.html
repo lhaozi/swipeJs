@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="appl""apple-mobile-web-app-status-bar-style" content="black">
+<meta content="telephone=no" name="format-detection" />
+
+<title>测试滑动效果</title>
+
+<link href="../assets/css/style.css" rel="stylesheet" type="text/css" />
+<script src="../assets/js/zepto.js"></script>
+<script src="../assets/js/swipe.js"></script>
+<script>
+	var glb={
+		isMove:true
+	}
+</script>
+</head>
+
+<body>
+	<div id="test" style="width:100%; height:100%; ">我是可滑动的物体</div>
+	<script>
+	$("#test").swipes({
+		swipeLeft: function(){$("#test").text("左");}, //左侧滑动事件
+		swipeRight: function(){$("#test").text("右");}, //右侧滑动事件
+		swipeUp:function(){ $("#test").text("上");}, //向上滑动事件
+		swipeDown: function(){ $("#test").text("下");}, //向下滑动事件
+		preventDefaultEvents: true //阻止默认事件
+	});
+	</script>
+</body>
+
+</html>
