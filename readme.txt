@@ -9,3 +9,5 @@ $("#test").swipes({
 });
 demo见demo。
 demo1.html,处理方式是通过margin-top实现位置的滑动。兼容向左向右滑动
+
+预览方式：chorme的device 模式下观看
